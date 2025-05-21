@@ -1,0 +1,51 @@
+/*════════════════════════════════════════════════════
+꧁═════════════════════ 2.Nabv ═════════════════════꧂
+═════════════════════════════════════════════════════*/
+
+.custom-header {
+    background: linear-gradient(177deg, #2e1371de 0%, #b6116cda 100%);
+    max-height: 80px;
+}
+.nav-link {
+    cursor: pointer;
+
+}
+.img-custom {
+    width: 40px;
+    height: 40px;
+}
+/*════════════════════════════════════════════════════
+꧁═════════════════════ 2.login view css ═════════════════════꧂
+═════════════════════════════════════════════════════*/
+.bg-purple {
+    background-color: rgb(55, 0, 77);
+}
+.bg-bubble {
+    background-image: url("../../../assets/bubble.png");
+    background-position: center;
+    
+    
+}
+.bg-rose {
+    background: linear-gradient(177deg, #2E1371 0%, #B6116B 100%);
+}
+.bg-card {
+    background: radial-gradient(61.44% 12.51% at 50.26% 12.51%, #FE53BB 0%, rgba(254, 83, 187, 0.2) 100%);
+}
+
+/*════════════════════════════════════════════════════
+꧁═════════════════════ 2.home view css ═════════════════════꧂
+═════════════════════════════════════════════════════*/
+.margin-cont {
+    padding-top: 80px;
+}
+.bg-static {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.05;
+    z-index: -1;
+}

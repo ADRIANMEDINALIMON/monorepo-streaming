@@ -1,0 +1,18 @@
+<div class="card d-flex h-100 shadow-lg bg-card rounded-5 p-2">
+
+      <img
+        [src]="'https://image.tmdb.org/t/p/w500' + img"
+        [alt]="title"
+        class="d-block w-100 rounded-5"
+      />
+  
+    <div class="card-body">
+      <h3 class="card-text text-white">{{ title }}</h3>
+      <p class="card-text text-white"> {{ overview.length > 120 ? (overview | slice:0:120) + '...' : overview }}</p>
+
+      <ng-content></ng-content>
+      
+    </div>
+  </div>
+  
+  

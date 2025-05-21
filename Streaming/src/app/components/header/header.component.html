@@ -1,0 +1,45 @@
+<header
+  class="custom-header navbar navbar-expand-md navbar-dark position-fixed w-100 z-1"
+>
+  <div class="container-fluid">
+    <a
+      class="d-flex align-items-center justify-content-center h-100 text-decoration-none nav-link"
+      href="/home"
+    >
+      <div class="rounded-circle mx-3 bg-light">
+        <img
+          src="assets/brujo-logo.png"
+          alt="Logo"
+          class="img-fluid img-custom"
+        />
+      </div>
+      <p class="navbar-brand p-0 m-0">Brujito Movies</p>
+    </a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item" *ngFor="let ruta of rutas">
+          <a class="nav-link text-white" href="#" (click)="navigate(ruta.id)">
+            {{ ruta.nombre }}
+          </a>
+        </li>
+      </ul>
+      <button
+        type="button"
+        class="btn btn-outline-light ms-3"
+        (click)="navigate('cerrar-sesion')"
+      >
+        <span class="nav-link">Cerrar Sesión</span>
+      </button>
+    </div>
+  </div>
+</header>

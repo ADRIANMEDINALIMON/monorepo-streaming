@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Secreto en la montaña",
+    "texto": "LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING ELIGENDI VOLUPTATES EXPLICABO VOLUPTATUM MAGNI, VOLUPTATES VOLUPTAS EXPLICABO.",
+    "imagenes": [
+      "assets/movies/movie1.jpg",
+      "assets/brujo-logo.png",
+      "assets/movies/movie1.jpg"
+    ]
+  },
+  {
+    "title": "Kung fu panda",
+    "texto": "LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING ELIGENDI VOLUPTATES EXPLICABO VOLUPTATUM MAGNI, VOLUPTATES VOLUPTAS EXPLICABO.",
+    "imagenes": [
+      "assets/movies/movie2.jpg",
+      "assets/brujo-logo.png",
+      "assets/movies/movie2.jpg"
+    ]
+  },
+  {
+    "title": "forrest gump",
+    "texto": "LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING ELIGENDI VOLUPTATES EXPLICABO VOLUPTATUM MAGNI, VOLUPTATES VOLUPTAS EXPLICABO.",
+    "imagenes": [
+      "assets/movies/movie3.webp",
+      "assets/brujo-logo.png",
+      "assets/movies/movie3.webp"
+    ]
+  }
+]
