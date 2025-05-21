@@ -1,0 +1,52 @@
+# ---- IGNORA ARCHIVOS DE ANGULAR ----
+/Streaming/node_modules/
+/Streaming/dist/
+/Streaming/.angular/cache/
+/Streaming/.angular/local/
+/Streaming/.env
+/Streaming/.env.*   # Por si llegas a tener .env de angular
+/Streaming/coverage/
+npm-debug.log
+yarn-error.log
+pnpm-debug.log
+
+# ---- IGNORA ARCHIVOS DE .NET ----
+/api_streaming/bin/
+/api_streaming/obj/
+/api_streaming/.vs/
+/api_streaming/.vscode/
+/api_streaming/appsettings.json
+/api_streaming/appsettings.Development.json
+/api_streaming/appsettings.Production.json
+/api_streaming/.env
+/api_streaming/*.user
+
+# ---- ARCHIVOS TEMPORALES Y SISTEMA ----
+.DS_Store
+Thumbs.db
+
+# ---- VSCODE Y OTROS EDITORES ----
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# ---- OTROS GENERALES ----
+/.history/*
+*.sublime-workspace
+*.launch
+.idea/
+.project
+.classpath
+.c9/
+.settings/
+.sass-cache/
+connect.lock
+libpeerconnection.log
+testem.log
+typings/
+
+# ---- GIT IGNORE GLOBAL ----
+*.log
+*.swp

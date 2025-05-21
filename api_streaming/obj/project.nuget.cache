@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6Gu176RXhO4=",
+  "dgSpecHash": "ENivaRjCefg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Adrian\\OneDrive\\Desktop\\Projects\\api-c\\api_streaming\\api_streaming.csproj",
+  "projectFilePath": "C:\\Users\\Adrian\\OneDrive\\Desktop\\Projects\\monorepo-streaming\\api_streaming\\api_streaming.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Adrian\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Adrian\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

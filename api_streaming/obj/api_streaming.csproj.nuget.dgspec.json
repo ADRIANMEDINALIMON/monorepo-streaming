@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Adrian\\OneDrive\\Desktop\\Projects\\api-c\\api_streaming\\api_streaming.csproj": {}
+    "C:\\Users\\Adrian\\OneDrive\\Desktop\\Projects\\monorepo-streaming\\api_streaming\\api_streaming.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Adrian\\OneDrive\\Desktop\\Projects\\api-c\\api_streaming\\api_streaming.csproj": {
+    "C:\\Users\\Adrian\\OneDrive\\Desktop\\Projects\\monorepo-streaming\\api_streaming\\api_streaming.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Adrian\\OneDrive\\Desktop\\Projects\\api-c\\api_streaming\\api_streaming.csproj",
+        "projectUniqueName": "C:\\Users\\Adrian\\OneDrive\\Desktop\\Projects\\monorepo-streaming\\api_streaming\\api_streaming.csproj",
         "projectName": "api_streaming",
-        "projectPath": "C:\\Users\\Adrian\\OneDrive\\Desktop\\Projects\\api-c\\api_streaming\\api_streaming.csproj",
+        "projectPath": "C:\\Users\\Adrian\\OneDrive\\Desktop\\Projects\\monorepo-streaming\\api_streaming\\api_streaming.csproj",
         "packagesPath": "C:\\Users\\Adrian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Adrian\\OneDrive\\Desktop\\Projects\\api-c\\api_streaming\\obj\\",
+        "outputPath": "C:\\Users\\Adrian\\OneDrive\\Desktop\\Projects\\monorepo-streaming\\api_streaming\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Adrian\\AppData\\Roaming\\NuGet\\NuGet.Config"
