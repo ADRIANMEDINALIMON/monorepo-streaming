@@ -317,3 +317,9 @@ C:\Users\Adrian\OneDrive\Desktop\Projects\monorepo-streaming\api_streaming\obj\D
 C:\Users\Adrian\OneDrive\Desktop\Projects\monorepo-streaming\api_streaming\obj\Debug\net9.0\api_streaming.pdb
 C:\Users\Adrian\OneDrive\Desktop\Projects\monorepo-streaming\api_streaming\obj\Debug\net9.0\api_streaming.genruntimeconfig.cache
 C:\Users\Adrian\OneDrive\Desktop\Projects\monorepo-streaming\api_streaming\obj\Debug\net9.0\ref\api_streaming.dll
+C:\Users\Adrian\OneDrive\Desktop\Projects\monorepo-streaming\api_streaming\bin\Debug\net9.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Adrian\OneDrive\Desktop\Projects\monorepo-streaming\api_streaming\bin\Debug\net9.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+C:\Users\Adrian\OneDrive\Desktop\Projects\monorepo-streaming\api_streaming\bin\Debug\net9.0\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\Adrian\OneDrive\Desktop\Projects\monorepo-streaming\api_streaming\bin\Debug\net9.0\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\Adrian\OneDrive\Desktop\Projects\monorepo-streaming\api_streaming\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Users\Adrian\OneDrive\Desktop\Projects\monorepo-streaming\api_streaming\bin\Debug\net9.0\Newtonsoft.Json.Bson.dll
