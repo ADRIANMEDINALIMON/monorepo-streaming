@@ -3,30 +3,28 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Agrega servicios de controladores
+// registra dbcontext y controladores
+builder.Services.AddDbContext<ApplicationDbContext>(opt =>
+    opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
+);
 builder.Services.AddControllers();
 
-// Configura DbContext (cambia la cadena de conexión si es necesario)
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
-);
-
-// (Opcional) Configura CORS para permitir peticiones de Angular
-builder.Services.AddCors(options =>
-{
-    options.AddDefaultPolicy(policy =>
+// habilita cors para peticiones desde cualquier origen
+builder.Services.AddCors(opt =>
+    opt.AddDefaultPolicy(policy =>
         policy.AllowAnyOrigin()
               .AllowAnyHeader()
               .AllowAnyMethod()
-    );
-});
+    )
+);
 
 var app = builder.Build();
 
+// aplica cors y redireccion https
 app.UseCors();
 app.UseHttpsRedirection();
 
-// Mapea los controladores
+// mapea rutas de controladores
 app.MapControllers();
 
 app.Run();

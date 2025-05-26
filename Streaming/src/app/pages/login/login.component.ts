@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -13,49 +14,57 @@ import { Router } from '@angular/router';
 export class LoginComponent {
   loginForm: FormGroup;
   submitted = false;
+  loginError = '';
 
-  constructor(private fb: FormBuilder, private router: Router) {
-    // formulario con validaciones
+  constructor(
+    private fb: FormBuilder,
+    private router: Router,
+    private auth: AuthService
+  ) {
+    // inicializa form reactivo con validaciones
     this.loginForm = this.fb.group({
       email:    ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(6)]],
     });
   }
 
-  // Getter de email
-  get email() {
-    return this.loginForm.get('email')!;
-  }
+  // getters para acceso facil a controles
+  get email()    { return this.loginForm.get('email')!; }
+  get password() { return this.loginForm.get('password')!; }
 
-  // Getter de password
-  get password() {
-    return this.loginForm.get('password')!;
-  }
-
-  // mensaje de error para el email
   get emailError(): string {
-    if (this.email.hasError('required')) return 'El correo es requerido.';
-    if (this.email.hasError('email'))    return 'El correo no es válido.';
+    if (this.email.hasError('required')) return 'el correo es requerido';
+    if (this.email.hasError('email'))    return 'el correo no es valido';
     return '';
   }
-
-  // mensaje de error para la contraseña
   get passwordError(): string {
-    if (this.password.hasError('required'))   return 'La contraseña es requerida.';
-    if (this.password.hasError('minlength'))  return 'La contraseña debe tener al menos 6 caracteres.';
+    if (this.password.hasError('required'))  return 'la contrasena es requerida';
+    if (this.password.hasError('minlength')) return 'minimo 6 caracteres';
     return '';
   }
 
-  // envío del formulario y marca como enviado
   onSubmit(): void {
+    // marca como enviado y resetea mensaje de error
     this.submitted = true;
-    if (this.loginForm.valid) {
-      this.simulateRedirect();
-    }
-  }
+    this.loginError = '';
 
-  // navegación a la ruta /home
-  simulateRedirect(): void {
-    this.router.navigate(['/home']);
+    // si form invalido no continuar
+    if (this.loginForm.invalid) return;
+
+    const { email, password } = this.loginForm.value;
+    // invoca servicio de auth y maneja respuesta
+    this.auth.login(email, password).subscribe({
+      next: res => {
+        // si existe user guardarlo y navegar al home
+        if (res.user) {
+          localStorage.setItem('user', JSON.stringify(res.user));
+          this.router.navigate(['/home']);
+        }
+      },
+      error: err => {
+        // en error muestra mensaje recibido o default
+        this.loginError = err.error?.message || 'credenciales incorrectas';
+      }
+    });
   }
 }
