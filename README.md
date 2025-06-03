@@ -89,11 +89,11 @@ Swashbuckle.AspNetCore	8.1.2
 # Code Coverage y reporte de testing
 
 ![Code Coverage](./Streaming/src/assets/readme/coverage.png)
-![testing](./Streaming/src/assets/readme/bd.png)
+![testing](./Streaming/src/assets/readme/testing.png)
 
 # DIAGRAMA DE ENTIDAD-RELACIÓN DE LA BASE DE DATOS
 
-![BD](./Streaming/src/assets/readme/swagger.png)
+![BD](./Streaming/src/assets/readme/bd.png)
 
 # MEJORAS FUTURAS
 
