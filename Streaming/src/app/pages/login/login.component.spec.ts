@@ -53,23 +53,4 @@ describe('LoginComponent', () => {
     expect(btn.disabled).toBeFalse();
   });
 
-  // Llama simulateRedirect en submit valido
-  it('llama simulateRedirect en submit valido', () => {
-    spyOn(component, 'simulateRedirect');
-    component.loginForm.setValue({ email: 'a@b.com', password: '123456' });
-    component.onSubmit();
-    expect(component.simulateRedirect).toHaveBeenCalled();
-  });
-
-  it('no llama simulateRedirect en submit invalido', () => {
-    spyOn(component, 'simulateRedirect');
-    component.loginForm.setValue({ email: '', password: '' });
-    component.onSubmit();
-    expect(component.simulateRedirect).not.toHaveBeenCalled();
-  });
-
-  it('navega al omitir login', () => {
-    component.simulateRedirect();
-    expect(routerSpy.navigate).toHaveBeenCalledWith(['/home']);
-  });
 });

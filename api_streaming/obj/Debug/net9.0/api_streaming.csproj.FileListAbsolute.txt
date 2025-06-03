@@ -324,3 +324,8 @@ C:\Users\Adrian\OneDrive\Desktop\Projects\monorepo-streaming\api_streaming\obj\D
 C:\Users\Adrian\OneDrive\Desktop\Projects\monorepo-streaming\api_streaming\obj\Debug\net9.0\api_streaming.pdb
 C:\Users\Adrian\OneDrive\Desktop\Projects\monorepo-streaming\api_streaming\obj\Debug\net9.0\api_streaming.genruntimeconfig.cache
 C:\Users\Adrian\OneDrive\Desktop\Projects\monorepo-streaming\api_streaming\obj\Debug\net9.0\ref\api_streaming.dll
+C:\Users\Adrian\OneDrive\Desktop\Projects\monorepo-streaming\api_streaming\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Adrian\OneDrive\Desktop\Projects\monorepo-streaming\api_streaming\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Adrian\OneDrive\Desktop\Projects\monorepo-streaming\api_streaming\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Adrian\OneDrive\Desktop\Projects\monorepo-streaming\api_streaming\bin\Debug\net9.0\api_streaming.xml
+C:\Users\Adrian\OneDrive\Desktop\Projects\monorepo-streaming\api_streaming\obj\Debug\net9.0\api_streaming.xml

@@ -30,7 +30,10 @@ export class HeaderComponent {
 
   navigate(route: string): void {
     if (route === 'cerrar-sesion') {
-      window.location.href = '/';
+      // limpia todo el localStorage 
+      localStorage.clear();
+      // redirige a la ruta de login
+      window.location.href = '/login';
     } else {
       window.scrollTo(0, 0);
       this.routeChange.emit(route);

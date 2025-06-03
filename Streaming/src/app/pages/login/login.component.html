@@ -1,75 +1,55 @@
 <div class="container-fluid vh-100 d-flex align-items-center justify-content-center p-0">
     <div class="row w-100 h-100">
-  
-      <!-- Login Formulario -->
-      <div class="col-md-6 col-sm-8 col-12 d-flex flex-column justify-content-center p-5 bg-black bg-bubble">
-        <div class="rounded bg-purple p-4 shadow-lg">
-  
-          <h2 class="text-center mb-4 text-white">Iniciar Sesión</h2> 
-  
-          <!-- Adaptamos el form a ReactiveForms -->
-          <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" novalidate>
-  
-            <!-- Email -->
-            <div class="mb-3">
-              <label for="email" class="form-label text-white">Correo electrónico</label>
-              <input
-                id="email"
-                type="email"
-                class="form-control"
-                formControlName="email"
-                placeholder="ejemplo@liderly.com"
-                [class.is-invalid]="email.invalid && (email.touched || submitted)"
-              />
-              <div class="invalid-feedback">
-                {{ emailError }}
-              </div>
-            </div>
-            
-            <!-- Password -->
-            <div class="mb-3">
-              <label for="password" class="form-label text-white">Contraseña</label>
-              <input
-                id="password"
-                type="password"
-                class="form-control"
-                formControlName="password"
-                placeholder="******"
-                [class.is-invalid]="password.invalid && (password.touched || submitted)"
-              />
-              <div class="invalid-feedback">
-                {{ passwordError }}
-              </div>
-            </div>
-  
-            <!-- Botones -->
-            <button
-              type="submit"
-              class="btn btn-success w-100 my-2"
-              [disabled]="loginForm.invalid"
-            >
-              Ingresar
-            </button>
-            <button
+        <!-- Login Formulario -->
+        <div class="col-md-6 col-sm-8 col-12 d-flex flex-column justify-content-center p-5 bg-black bg-bubble">
+            <div class="rounded bg-purple p-4 shadow-lg">
+                <h2 class="text-center mb-4 text-white">Iniciar Sesión</h2>
+
+                <!-- Adaptamos el form a ReactiveForms -->
+                <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" novalidate>
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label text-white">Correo electrónico</label>
+                        <input id="email" type="email" class="form-control" formControlName="email"
+                            placeholder="ejemplo@liderly.com"
+                            [class.is-invalid]="email.invalid && (email.touched || submitted)" />
+                        <div class="invalid-feedback">
+                            {{ emailError }}
+                        </div>
+                    </div>
+
+                    <!-- Password -->
+                    <div class="mb-3">
+                        <label for="password" class="form-label text-white">Contraseña</label>
+                        <input id="password" type="password" class="form-control" formControlName="password"
+                            placeholder="******" [class.is-invalid]="
+                            password.invalid && (password.touched || submitted)" />
+                        <div class="invalid-feedback">
+                            {{ passwordError }}
+                        </div>
+                    </div>
+
+                    <!-- Botones -->
+                    <button type="submit" class="btn btn-success w-100 my-2" [disabled]="loginForm.invalid">
+                        Ingresar
+                    </button>
+                    <!--<button
               type="button"
               class="btn btn-danger w-100 my-2"
               (click)="onSubmit()"
             >
               Omitir login
-            </button>
-          </form>
-  
+            </button>-->
+                </form>
+            </div>
         </div>
-      </div>
-  
-      <!-- Imagen Brujín -->
-      <div class="col-md-6 col-sm-4 col-12 d-flex align-items-center justify-content-center flex-column bg-rose">
-        <div class="rounded-circle p-3 bg-card">
-          <img src="assets/brujo-logo.png" alt="Logo" class="img-fluid" />
+
+        <!-- Imagen Brujín -->
+        <div class="col-md-6 col-sm-4 col-12 d-flex align-items-center justify-content-center flex-column bg-rose">
+            <div class="rounded-circle p-3 bg-card">
+                <img src="assets/brujo-logo.png" alt="Logo" class="img-fluid" />
+            </div>
+            <h1 class="text-center mt-4 text-white">Brujito Movies</h1>
         </div>
-        <h1 class="text-center mt-4 text-white">Brujito Movies</h1>
-      </div>
-  
     </div>
-  </div>
-  
+</div>

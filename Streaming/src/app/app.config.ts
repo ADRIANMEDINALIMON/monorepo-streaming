@@ -8,7 +8,6 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
 
-    // Carga ReactiveFormsModule y sus providers globalmente
     importProvidersFrom(ReactiveFormsModule),
 
     provideRouter(routes),
